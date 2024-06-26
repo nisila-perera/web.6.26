@@ -1,5 +1,5 @@
 let randomNumber = Math.floor((Math.random() * 10) + 1);
-console.log(randomNumber);
+console.log("You idiot go and play the game don't cheat!");
 let count = 0;
 
 document.getElementById("btn").addEventListener("click", check);
@@ -9,7 +9,7 @@ function check() {
     let userGuess = parseInt(document.getElementById("txt").value, 10);
     let resultMessage = "";
 
-    if (userGuess === randomNumber) {
+    if (userGuess == randomNumber) {
         resultMessage = "Congratulations! You win";
     } else if (userGuess > randomNumber) {
         resultMessage = "Your guess is too high. Try again";
@@ -20,6 +20,6 @@ function check() {
     if(count < 3){
         document.getElementById("result").innerText = resultMessage;
     } else {
-        document.getElementById("time out").innerText = resultMessage;
+        document.getElementById("result").innerText = "You've reached the maximum number of attempts.";
     }
 }
