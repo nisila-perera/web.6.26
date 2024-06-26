@@ -12,14 +12,14 @@ function check() {
     if (userGuess == randomNumber) {
         resultMessage = "Congratulations! You win";
     } else if (userGuess > randomNumber) {
-        resultMessage = "Your guess is too high. Try again";
+        resultMessage = "You idiot can't even guess a number try again :(";
     } else if (userGuess < randomNumber) {
-        resultMessage = "Your guess is too low. Try again";
+        resultMessage = "You idiot can't even guess a number try again :(";
     }
 
     if(count < 3){
         document.getElementById("result").innerText = resultMessage;
     } else {
-        document.getElementById("result").innerText = "You've reached the maximum number of attempts.";
+        document.getElementById("result").innerText = "You've reached the maximum number of attempts. Refresh";
     }
 }
