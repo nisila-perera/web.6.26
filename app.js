@@ -1,5 +1,5 @@
 let randomNumber = Math.floor((Math.random() * 10) + 1);
-console.log("You idiot go and play the game don't cheat!");
+console.log("Don't cheat go and play!!!");
 let count = 0;
 
 document.getElementById("btn").addEventListener("click", check);
