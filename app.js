@@ -12,9 +12,9 @@ function check() {
     if (userGuess == randomNumber) {
         resultMessage = "Congratulations! You win";
     } else if (userGuess > randomNumber) {
-        resultMessage = "You idiot can't even guess a number try again :(";
+        resultMessage = "You idiot can't even guess a number try again :( | Tip - Your guess is higher";
     } else if (userGuess < randomNumber) {
-        resultMessage = "You idiot can't even guess a number try again :(";
+        resultMessage = "You idiot can't even guess a number try again :( | Tip - Your guess is lower";
     }
 
     if(count < 3){
